@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5f5c4a",
+              "on-primary-container": "#543c00",
+              "on-tertiary": "#d1ffc8",
+              "outline": "#7b7764",
+              "background": "#fdf7df",
+              "tertiary": "#006b1b",
+              "secondary-fixed": "#b1d5ff",
+              "on-primary": "#fff1dc",
+              "outline-variant": "#b2ad98",
+              "surface-container": "#efe9cd",
+              "primary-dim": "#684b00",
+              "on-error": "#ffefec",
+              "primary-fixed-dim": "#ecae00",
+              "surface-dim": "#dbd5b5",
+              "on-error-container": "#520c00",
+              "primary-container": "#fdbc13",
+              "on-background": "#312f1f",
+              "error": "#b02500",
+              "on-secondary-container": "#004a7b",
+              "error-container": "#f95630",
+              "surface-container-highest": "#e3ddbf",
+              "inverse-surface": "#100e03",
+              "tertiary-fixed-dim": "#83e881",
+              "secondary": "#005f9c",
+              "surface-bright": "#fdf7df",
+              "secondary-container": "#b1d5ff",
+              "secondary-dim": "#005388",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#3b2900",
+              "on-surface": "#312f1f",
+              "on-tertiary-fixed": "#00480f",
+              "inverse-primary": "#fdbc13",
+              "surface-container-low": "#f7f1d7",
+              "on-secondary-fixed-variant": "#00548a",
+              "tertiary-fixed": "#91f78e",
+              "on-secondary": "#ecf3ff",
+              "surface-container-high": "#e9e3c6",
+              "on-secondary-fixed": "#00365c",
+              "inverse-on-surface": "#a29d88",
+              "on-tertiary-fixed-variant": "#00691a",
+              "primary": "#775600",
+              "on-tertiary-container": "#005e17",
+              "surface-tint": "#775600",
+              "on-primary-fixed-variant": "#604500",
+              "surface": "#fdf7df",
+              "tertiary-dim": "#005d16",
+              "surface-variant": "#e3ddbf",
+              "secondary-fixed-dim": "#96c8ff",
+              "error-dim": "#b92902",
+              "tertiary-container": "#91f78e",
+              "primary-fixed": "#fdbc13"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .sea-parting-gradient {
+        background: linear-gradient(90deg, #005f9c 0%, #b1d5ff 30%, #fdf7df 50%, #b1d5ff 70%, #005f9c 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-[#fdf7df] dark:bg-[#312f1f] bg-opacity-80 backdrop-blur-md fixed top-0 z-50 border-b border-[#b2ad98]/15 shadow-sm dark:shadow-none flex flex-row-reverse justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#775600] dark:text-[#fdbc13] hover:scale-105 transition-transform duration-200 cursor-pointer" data-icon="map">map</span>
+</div>
+<h1 class="font-plus-jakarta-sans text-2xl font-bold tracking-tight text-right text-[#775600] dark:text-[#fdbc13]">Exodus Adventure</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#775600] dark:text-[#fdbc13] hover:scale-105 transition-transform duration-200 cursor-pointer" data-icon="arrow_back">arrow_back</span>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-4 max-w-4xl mx-auto space-y-12">
+<!-- Story Header Section -->
+<section class="text-center space-y-4">
+<h2 class="font-headline text-5xl md:text-6xl font-extrabold text-primary tracking-tight">קריעת ים סוף</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">הנס הגדול מכולם: הים נפתח לשניים ובני ישראל עברו בחרבה!</p>
+</section>
+<!-- The "Digital Pop-Up" Illustration Section -->
+<section class="relative h-[400px] rounded-xl overflow-visible mb-16">
+<div class="absolute inset-0 sea-parting-gradient rounded-xl opacity-20 blur-2xl"></div>
+<!-- Left Wall of Water -->
+<div class="absolute left-0 top-0 bottom-0 w-1/3 bg-secondary rounded-r-xl shadow-2xl flex items-center justify-center transform -rotate-2 z-10 overflow-hidden">
+<div class="absolute inset-0 opacity-30" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRZ7kHd0TGfOIU0yP6FTDY53s0hU-vYIhIxqSKfpIjEbAHicUH3gNEWrOwVWhWobhJqlfqMOCgl2sOtOFXTmoaYha8biswpY6M633OH-1MHzqqHgq7D7wBPyL29Q-smQcWjkMcGuRRf-wxIPd2gDEZDrf3aIXAN1AYqbgWAw9tqG5dWtj8TKqZMFoo4bB27Or2MN9-kcvbgCf7xhngbpMkH3CdpNBILuEnhEiUd9661dw-uBJzi5QiqNsCO94htBcqw8Ovk_fPzpDf');"></div>
+<span class="material-symbols-outlined text-on-secondary text-9xl opacity-20" data-icon="waves">waves</span>
+</div>
+<!-- The Path (Dry Ground) -->
+<div class="absolute inset-0 mx-auto w-1/2 bg-surface-container-low flex flex-col items-center justify-end pb-8 z-0">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-surface-bright to-surface-container-low opacity-50"></div>
+<div class="flex space-x-4 space-x-reverse mb-4">
+<span class="material-symbols-outlined text-primary text-5xl animate-bounce" data-icon="man">man</span>
+<span class="material-symbols-outlined text-primary text-4xl animate-bounce delay-75" data-icon="child_care">child_care</span>
+<span class="material-symbols-outlined text-primary text-5xl animate-bounce delay-150" data-icon="woman">woman</span>
+</div>
+</div>
+<!-- Right Wall of Water -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 bg-secondary rounded-l-xl shadow-2xl flex items-center justify-center transform rotate-2 z-10 overflow-hidden">
+<div class="absolute inset-0 opacity-30" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXJ2vdWrJ9iDnw6Mb9P6ls5rTJXhdaYbvqF50zKnVAXgaFBaiNo0HKfutLgguwWYXaDJDf1YnlDCuBHUjTy7GDcPjockYxk6tBMu5wJdu2wAZuG3E4PmdNjr2B4ZozXAAOqHRig858YCZrc9dv0S-SKqjmDXgLUFPZDfeXMlFuP1p1hGTV6shDn9a2KNfg0il8p6gd27yuRuO5sFvsLrfLl87RkSC1l9nIOhwMtRklXWaMT48MkXRGWD_MIlyHpXAhxI9X_y4GDos0');"></div>
+<span class="material-symbols-outlined text-on-secondary text-9xl opacity-20" data-icon="waves">waves</span>
+</div>
+<!-- Floating Moses Icon (Asymmetric Overlap) -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 z-30 bg-primary-container p-6 rounded-full shadow-xl border-4 border-surface">
+<span class="material-symbols-outlined text-on-primary-container text-6xl" data-icon="person_celebrate" style="font-variation-settings: 'FILL' 1;">person_celebrate</span>
+</div>
+</section>
+<!-- Video Integration (Bento Grid Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/15 flex flex-col gap-4">
+<h3 class="font-headline text-2xl font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                    צפו בנס קורה
+                </h3>
+<div class="aspect-video bg-on-surface rounded-lg relative overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60" data-alt="vibrant animated illustration of the red sea parting with golden light in the center and towering blue water walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPOB7WDisj8LlQpYvh3csfKv-_lG8lP5uWT-QK0J-Iu3-UjhxEs0c-1P-GSMMzUKVCGzHyy3EoRhCRUdjtJ64zZHZJYNxbq7ToTuBwQsWXCOoA1iMyOf1TJoHboCbjRE-q7xf47quqnv4NGPA6TrXDbzBtQPHfkkVKfvsQHqVKP9gJjebp79BQwPTECRXrOKNxVZO7Etp8p_DicTuakizVk16EJVzZxPmZlT4NPrADwvBmIdNSYToSZ9mAFtWY11DA2PO0GJ2Om-cO"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary-container text-on-primary-container p-4 rounded-full shadow-2xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trivia Section (The Scribe's Box) -->
+<div class="bg-surface-container-high p-8 rounded-xl shadow-sm space-y-6">
+<div class="bg-tertiary/10 w-fit p-3 rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="quiz">quiz</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">במה השתמש משה כדי לבקוע את הים?</h3>
+<div class="space-y-3">
+<button class="w-full text-right p-4 rounded-lg bg-surface-container-lowest hover:bg-primary-container transition-colors font-bold text-on-surface-variant hover:text-on-primary-container flex items-center justify-between group">
+<span>חרב זהב</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100" data-icon="close">close</span>
+</button>
+<button class="w-full text-right p-4 rounded-lg bg-primary-container shadow-[0_4px_0_#775600] text-on-primary-container font-black flex items-center justify-between">
+<span>המטה שלו</span>
+<span class="material-symbols-outlined" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<button class="w-full text-right p-4 rounded-lg bg-surface-container-lowest hover:bg-primary-container transition-colors font-bold text-on-surface-variant hover:text-on-primary-container flex items-center justify-between group">
+<span>ספינה גדולה</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Success Message / Celebration -->
+<div class="bg-tertiary-container/30 p-8 rounded-xl border-2 border-dashed border-tertiary/30 flex flex-col md:flex-row items-center gap-6">
+<div class="bg-tertiary text-on-tertiary p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-on-tertiary-container">כל הכבוד, הרפתקן צעיר!</h4>
+<p class="text-on-tertiary-fixed-variant">סיימת את פרק יציאת מצרים. מוכן לגלות מה קרה במדבר?</p>
+</div>
+<button class="mr-auto bg-tertiary text-on-tertiary px-8 py-4 rounded-lg font-bold shadow-[0_4px_0_#00480f] hover:translate-y-1 transition-all">
+                בוא נמשיך!
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex flex-row-reverse justify-around items-center px-4 pb-6 pt-4 bg-[#fdf7df] dark:bg-[#312f1f] bg-opacity-80 backdrop-blur-md z-50 rounded-t-[3rem] shadow-[0_-4px_24px_rgba(49,47,31,0.06)]">
+<!-- Next (Active Intent for 5 of 5 Completion) -->
+<div class="flex flex-col items-center justify-center bg-[#fdbc13] text-[#775600] rounded-[2rem] px-8 py-3 shadow-[0_4px_0_#775600] transition-all duration-100 active:translate-y-1 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">הבא</span>
+</div>
+<!-- Progress -->
+<div class="flex flex-col items-center justify-center text-[#005f9c] px-6 py-2 hover:bg-[#efe9cd] dark:hover:bg-[#312f1f] rounded-[2rem] transition-colors cursor-pointer">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">התקדמות</span>
+</div>
+<!-- Previous -->
+<div class="flex flex-col items-center justify-center text-[#005f9c] px-6 py-2 hover:bg-[#efe9cd] dark:hover:bg-[#312f1f] rounded-[2rem] transition-colors cursor-pointer">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">הקודם</span>
+</div>
+</nav>
+</body></html>
