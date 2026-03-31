@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exodus Adventure - הרפתקת יציאת מצרים</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/styles/shared.css"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#5f5c4a",
+          "on-primary-container": "#543c00",
+          "on-tertiary": "#d1ffc8",
+          "outline": "#7b7764",
+          "background": "#fdf7df",
+          "tertiary": "#006b1b",
+          "secondary-fixed": "#b1d5ff",
+          "on-primary": "#fff1dc",
+          "outline-variant": "#b2ad98",
+          "surface-container": "#efe9cd",
+          "primary-dim": "#684b00",
+          "on-error": "#ffefec",
+          "primary-fixed-dim": "#ecae00",
+          "surface-dim": "#dbd5b5",
+          "on-error-container": "#520c00",
+          "primary-container": "#fdbc13",
+          "on-background": "#312f1f",
+          "error": "#b02500",
+          "on-secondary-container": "#004a7b",
+          "error-container": "#f95630",
+          "surface-container-highest": "#e3ddbf",
+          "inverse-surface": "#100e03",
+          "tertiary-fixed-dim": "#83e881",
+          "secondary": "#005f9c",
+          "surface-bright": "#fdf7df",
+          "secondary-container": "#b1d5ff",
+          "secondary-dim": "#005388",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed": "#3b2900",
+          "on-surface": "#312f1f",
+          "on-tertiary-fixed": "#00480f",
+          "inverse-primary": "#fdbc13",
+          "surface-container-low": "#f7f1d7",
+          "on-secondary-fixed-variant": "#00548a",
+          "tertiary-fixed": "#91f78e",
+          "on-secondary": "#ecf3ff",
+          "surface-container-high": "#e9e3c6",
+          "on-secondary-fixed": "#00365c",
+          "inverse-on-surface": "#a29d88",
+          "on-tertiary-fixed-variant": "#00691a",
+          "primary": "#775600",
+          "on-tertiary-container": "#005e17",
+          "surface-tint": "#775600",
+          "on-primary-fixed-variant": "#604500",
+          "surface": "#fdf7df",
+          "tertiary-dim": "#005d16",
+          "surface-variant": "#e3ddbf",
+          "secondary-fixed-dim": "#96c8ff",
+          "error-dim": "#b92902",
+          "tertiary-container": "#91f78e",
+          "primary-fixed": "#fdbc13"
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans"],
+          "body": ["Be Vietnam Pro"],
+          "label": ["Plus Jakarta Sans"]
+        },
+        borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .filled-icon {
+    font-variation-settings: 'FILL' 1;
+  }
+  body {
+    background-color: #fdf7df;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+</style>
+</head>
+<body class="min-h-screen pb-12 bg-background text-on-surface">
+
+<!-- Top App Bar -->
+<header class="bg-[#fdf7df] bg-opacity-80 backdrop-blur-md border-b border-[#b2ad98]/15 shadow-sm sticky top-0 z-50 flex justify-center items-center px-6 py-4 w-full">
+  <h1 class="font-headline text-2xl font-bold tracking-tight text-primary">Exodus Adventure</h1>
+</header>
+
+<main class="max-w-2xl mx-auto px-4 pt-8 space-y-10">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary-container to-surface-bright rounded-xl p-5 md:p-8 flex flex-col items-center text-center gap-5 overflow-hidden relative">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_60%_40%,_#775600,_transparent_70%)]"></div>
+    <span class="material-symbols-outlined filled-icon text-primary z-10" style="font-size: 4rem;">auto_stories</span>
+    <div class="z-10 space-y-3">
+      <h2 class="font-headline text-3xl md:text-4xl lg:text-5xl font-black text-on-primary-container leading-tight">
+        הרפתקת יציאת מצרים
+      </h2>
+      <p class="font-body text-base md:text-lg text-on-surface-variant leading-relaxed max-w-sm mx-auto">
+        צאו למסע מרתק דרך סיפור יציאת מצרים
+      </p>
+    </div>
+  </section>
+
+  <!-- Story Map — Chapter Cards -->
+  <section class="space-y-4">
+    <h3 class="font-headline text-xl font-bold text-primary text-right px-1">מפת הסיפור</h3>
+
+    <!-- Chapter 1 -->
+    <a href="/chapters/1" class="block">
+      <div class="bg-surface-container-lowest rounded-xl p-5 flex items-center gap-4 shadow-[0_4px_0_#b2ad98] hover:shadow-[0_6px_0_#b2ad98] hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_2px_0_#b2ad98] transition-all duration-150 cursor-pointer group">
+        <!-- Icon -->
+        <div class="flex-shrink-0 w-14 h-14 bg-tertiary-container rounded-lg flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-on-tertiary-container" style="font-size: 2rem;">family_history</span>
+        </div>
+        <!-- Text -->
+        <div class="flex-1 text-right space-y-1">
+          <div class="flex items-center justify-end gap-2">
+            <h4 class="font-headline text-lg font-bold text-on-surface">יעקב מגיע למצרים</h4>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-xs">פרק 1</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant">יעקב ומשפחתו מתאחדים עם יוסף</p>
+        </div>
+        <!-- Arrow -->
+        <span class="material-symbols-outlined text-outline flex-shrink-0 group-hover:text-primary transition-colors">arrow_back_ios</span>
+      </div>
+    </a>
+
+    <!-- Chapter 2 -->
+    <a href="/chapters/2" class="block">
+      <div class="bg-surface-container-lowest rounded-xl p-5 flex items-center gap-4 shadow-[0_4px_0_#b2ad98] hover:shadow-[0_6px_0_#b2ad98] hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_2px_0_#b2ad98] transition-all duration-150 cursor-pointer group">
+        <div class="flex-shrink-0 w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-on-secondary-container" style="font-size: 2rem;">construction</span>
+        </div>
+        <div class="flex-1 text-right space-y-1">
+          <div class="flex items-center justify-end gap-2">
+            <h4 class="font-headline text-lg font-bold text-on-surface">בני ישראל במצרים</h4>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-xs">פרק 2</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant">השעבוד הקשה תחת פרעה</p>
+        </div>
+        <span class="material-symbols-outlined text-outline flex-shrink-0 group-hover:text-primary transition-colors">arrow_back_ios</span>
+      </div>
+    </a>
+
+    <!-- Chapter 3 -->
+    <a href="/chapters/3" class="block">
+      <div class="bg-surface-container-lowest rounded-xl p-5 flex items-center gap-4 shadow-[0_4px_0_#b2ad98] hover:shadow-[0_6px_0_#b2ad98] hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_2px_0_#b2ad98] transition-all duration-150 cursor-pointer group">
+        <div class="flex-shrink-0 w-14 h-14 bg-primary-container rounded-lg flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-on-primary-container" style="font-size: 2rem;">local_fire_department</span>
+        </div>
+        <div class="flex-1 text-right space-y-1">
+          <div class="flex items-center justify-end gap-2">
+            <h4 class="font-headline text-lg font-bold text-on-surface">משה והסנה הבוער</h4>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-xs">פרק 3</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant">ה' מתגלה למשה במדבר</p>
+        </div>
+        <span class="material-symbols-outlined text-outline flex-shrink-0 group-hover:text-primary transition-colors">arrow_back_ios</span>
+      </div>
+    </a>
+
+    <!-- Chapter 4 -->
+    <a href="/chapters/4" class="block">
+      <div class="bg-surface-container-lowest rounded-xl p-5 flex items-center gap-4 shadow-[0_4px_0_#b2ad98] hover:shadow-[0_6px_0_#b2ad98] hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_2px_0_#b2ad98] transition-all duration-150 cursor-pointer group">
+        <div class="flex-shrink-0 w-14 h-14 bg-surface-container rounded-lg flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-on-surface-variant" style="font-size: 2rem;">thunderstorm</span>
+        </div>
+        <div class="flex-1 text-right space-y-1">
+          <div class="flex items-center justify-end gap-2">
+            <h4 class="font-headline text-lg font-bold text-on-surface">עשר המכות</h4>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-xs">פרק 4</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant">המכות שפקדו את מצרים</p>
+        </div>
+        <span class="material-symbols-outlined text-outline flex-shrink-0 group-hover:text-primary transition-colors">arrow_back_ios</span>
+      </div>
+    </a>
+
+    <!-- Chapter 5 -->
+    <a href="/chapters/5" class="block">
+      <div class="bg-surface-container-lowest rounded-xl p-5 flex items-center gap-4 shadow-[0_4px_0_#b2ad98] hover:shadow-[0_6px_0_#b2ad98] hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_2px_0_#b2ad98] transition-all duration-150 cursor-pointer group">
+        <div class="flex-shrink-0 w-14 h-14 bg-secondary-container rounded-lg flex items-center justify-center">
+          <span class="material-symbols-outlined filled-icon text-on-secondary-container" style="font-size: 2rem;">waves</span>
+        </div>
+        <div class="flex-1 text-right space-y-1">
+          <div class="flex items-center justify-end gap-2">
+            <h4 class="font-headline text-lg font-bold text-on-surface">קריעת ים סוף</h4>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-headline font-bold text-xs">פרק 5</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant">הנס הגדול והמסע לחופש</p>
+        </div>
+        <span class="material-symbols-outlined text-outline flex-shrink-0 group-hover:text-primary transition-colors">arrow_back_ios</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- Progress Section -->
+  <section class="bg-surface-container-low rounded-xl p-4 md:p-6 space-y-3">
+    <div class="flex items-center justify-between">
+      <span class="font-headline text-sm font-semibold text-tertiary">0%</span>
+      <span class="font-body text-sm text-on-surface-variant">0 מתוך 5 פרקים הושלמו</span>
+    </div>
+    <div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+      <div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 0%"></div>
+    </div>
+    <p class="font-body text-xs text-on-surface-variant text-right">התחילו את הפרק הראשון כדי להתחיל את ההרפתקה!</p>
+  </section>
+
+</main>
+</body>
+</html>

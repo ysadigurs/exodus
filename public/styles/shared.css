@@ -1,0 +1,19 @@
+/* Exodus Adventure — Shared Styles */
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.filled-icon {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Base */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: #fdf7df;
+  min-height: max(884px, 100dvh);
+}
+h1, h2, h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}

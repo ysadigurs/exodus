@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/styles/shared.css"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5f5c4a",
+              "on-primary-container": "#543c00",
+              "on-tertiary": "#d1ffc8",
+              "outline": "#7b7764",
+              "background": "#fdf7df",
+              "tertiary": "#006b1b",
+              "secondary-fixed": "#b1d5ff",
+              "on-primary": "#fff1dc",
+              "outline-variant": "#b2ad98",
+              "surface-container": "#efe9cd",
+              "primary-dim": "#684b00",
+              "on-error": "#ffefec",
+              "primary-fixed-dim": "#ecae00",
+              "surface-dim": "#dbd5b5",
+              "on-error-container": "#520c00",
+              "primary-container": "#fdbc13",
+              "on-background": "#312f1f",
+              "error": "#b02500",
+              "on-secondary-container": "#004a7b",
+              "error-container": "#f95630",
+              "surface-container-highest": "#e3ddbf",
+              "inverse-surface": "#100e03",
+              "tertiary-fixed-dim": "#83e881",
+              "secondary": "#005f9c",
+              "surface-bright": "#fdf7df",
+              "secondary-container": "#b1d5ff",
+              "secondary-dim": "#005388",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#3b2900",
+              "on-surface": "#312f1f",
+              "on-tertiary-fixed": "#00480f",
+              "inverse-primary": "#fdbc13",
+              "surface-container-low": "#f7f1d7",
+              "on-secondary-fixed-variant": "#00548a",
+              "tertiary-fixed": "#91f78e",
+              "on-secondary": "#ecf3ff",
+              "surface-container-high": "#e9e3c6",
+              "on-secondary-fixed": "#00365c",
+              "inverse-on-surface": "#a29d88",
+              "on-tertiary-fixed-variant": "#00691a",
+              "primary": "#775600",
+              "on-tertiary-container": "#005e17",
+              "surface-tint": "#775600",
+              "on-primary-fixed-variant": "#604500",
+              "surface": "#fdf7df",
+              "tertiary-dim": "#005d16",
+              "surface-variant": "#e3ddbf",
+              "secondary-fixed-dim": "#96c8ff",
+              "error-dim": "#b92902",
+              "tertiary-container": "#91f78e",
+              "primary-fixed": "#fdbc13"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#fdf7df] dark:bg-[#312f1f] bg-opacity-80 backdrop-blur-md border-b border-[#b2ad98]/15 shadow-sm dark:shadow-none docked full-width top-0 z-50 sticky flex flex-row-reverse justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<a href="/"><span class="material-symbols-outlined text-[#775600] dark:text-[#fdbc13] hover:scale-105 transition-transform duration-200 cursor-pointer" data-icon="map">map</span></a>
+</div>
+<h1 class="font-plus-jakarta-sans text-2xl font-bold tracking-tight text-right text-[#775600] dark:text-[#fdbc13]">Exodus Adventure</h1>
+<div class="flex items-center">
+<a href="/"><span class="material-symbols-outlined text-[#775600] dark:text-[#fdbc13] hover:scale-105 transition-transform duration-200 cursor-pointer" data-icon="arrow_back">arrow_back</span></a>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 pt-8 space-y-12">
+<!-- Hero Section: Jacob & Joseph Meeting -->
+<section class="relative overflow-visible">
+<div class="bg-gradient-to-br from-primary-container to-surface-bright rounded-xl p-5 md:p-8 min-h-[280px] md:min-h-[400px] flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-dim to-transparent"></div>
+<div class="w-full md:w-1/2 z-10 space-y-6 text-right">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold text-sm">סיפור המקרא</span>
+<h2 class="font-headline text-3xl md:text-5xl font-black text-on-primary-container leading-tight">יעקב מגיע למצרים</h2>
+<p class="font-body text-base md:text-xl text-on-surface-variant leading-relaxed">
+                        לאחר שנים רבות של פרידה, יעקב ומשפחתו מגיעים למצרים כדי להתאחד עם יוסף. זהו רגע של שמחה גדולה ודמעות של התרגשות!
+                    </p>
+<button class="bg-primary text-on-primary px-6 py-3 md:px-8 md:py-4 rounded-lg font-headline font-bold text-base md:text-lg flex items-center gap-3 shadow-[0_4px_0_#604500] hover:scale-105 active:translate-y-1 transition-all">
+<span class="material-symbols-outlined filled-icon" data-icon="play_circle">play_circle</span>
+<span>צפו בסרטון</span>
+</button>
+</div>
+<div class="w-full md:w-1/2 relative group">
+<div class="relative z-10 transform group-hover:rotate-2 transition-transform duration-500">
+<img alt="Jacob and family meeting Joseph" class="rounded-xl shadow-2xl w-full h-auto border-8 border-surface-container-lowest" data-alt="vibrant colorful illustration in a storybook style showing an elderly Jacob hugging a regally dressed Joseph in Egypt, sun shining, palm trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA83N1aPnQA4UjhlgVzlbljPapbj9aE72oq8jVVK8VvrOc_Wr228AGro8hdV6x1Nvpobv0ViS2DTvrDYal0bti3goMU3G6wTULuoyvOxcpGAW2rsGOuVSgzdSkXh7PjRTrBN2IyEI5B7W1QZcxIELI_5_f6_zoupfgfNWPntcO3Qe15B4i9b8VX7MIDsxRNpInF9ysDwdrPElw8rxl3JYtQrRAyd4qUD1L7aPNXylorQrduT2rJujxVu9v2Wq1AlUz0TltO0QWOtXQF"/>
+</div>
+<!-- Decorative overlapping element -->
+<div class="absolute -bottom-6 -left-6 z-20 w-32 h-32 bg-tertiary-container rounded-full flex items-center justify-center shadow-lg transform -rotate-12">
+<span class="material-symbols-outlined text-on-tertiary-container text-5xl" data-icon="family_history">family_history</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Content: The Journey -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-8 space-y-8">
+<div class="bg-surface-container-lowest rounded-xl p-5 md:p-10 shadow-sm border border-outline-variant/10">
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">המסע של בני ישראל</h3>
+<div class="space-y-6 text-on-surface text-lg leading-loose text-right">
+<p>כאשר שמע יעקב שיוסף חי והוא שליט במצרים, לבו התמלא שמחה. הוא אסף את כל משפחתו, את צאנו ואת רכושו ויצא לדרך הארוכה מכנען למצרים.</p>
+<p>המפגש היה מרגש במיוחד. יוסף יצא לקראת אביו במרכבתו המפוארת. כשהם ראו אחד את השני, הם התחבקו ובכו זמן רב מרוב אושר.</p>
+<p>פרעה מלך מצרים קיבל את יעקב בכבוד רב ונתן למשפחתו את ארץ גושן - הארץ הטובה ביותר במצרים למרעה צאן.</p>
+</div>
+</div>
+</div>
+<!-- Side Bento Card: Fact -->
+<div class="md:col-span-4 space-y-6">
+<div class="bg-secondary-container rounded-xl p-6 text-on-secondary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="lightbulb">lightbulb</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2">הידעת?</h4>
+<p class="font-body text-sm leading-relaxed">
+                        בני ישראל היו 70 נפש כאשר ירדו למצרים. משם הם צמחו והפכו לעם גדול וחזק!
+                    </p>
+</div>
+<div class="bg-surface-container-high rounded-xl p-6 text-right space-y-4">
+<h4 class="font-headline font-bold text-primary">התקדמות המסע</h4>
+<div class="h-4 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-1/5 relative">
+<div class="absolute right-0 top-0 h-full w-4 bg-tertiary-fixed-dim blur-sm opacity-50"></div>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant font-medium">שלב 1 מתוך 5 בסיפור יציאת מצרים</p>
+</div>
+</div>
+</div>
+<!-- Trivia Section -->
+<section class="mt-12">
+<div class="bg-[#ffffff] rounded-xl p-5 md:p-8 lg:p-12 shadow-[0_24px_48px_rgba(49,47,31,0.08)] relative border border-outline-variant/15">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="bg-primary-container w-24 h-24 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container text-4xl filled-icon" data-icon="quiz">quiz</span>
+</div>
+<div class="text-right flex-1 space-y-6 w-full">
+<div>
+<h3 class="font-headline text-2xl font-black text-primary">זמן טריוויה!</h3>
+<p class="font-body text-on-surface-variant">האם הקשבתם היטב לסיפור? בואו נבדוק!</p>
+</div>
+<div class="space-y-4">
+<p class="font-headline font-bold text-base md:text-xl text-on-surface">את מי פגש יעקב כשהגיע למצרים?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<button class="p-4 rounded-lg border-2 border-surface-container hover:bg-surface-container-low transition-colors text-right font-bold text-on-surface flex items-center justify-between group">
+<span>א. פרעה המלך</span>
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary"></span>
+</button>
+<button class="p-4 rounded-lg border-2 border-primary-container bg-primary-container/10 text-right font-bold text-on-surface flex items-center justify-between group">
+<span>ב. יוסף בנו</span>
+<span class="w-6 h-6 rounded-full border-2 border-primary bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-sm" data-icon="check">check</span>
+</span>
+</button>
+<button class="p-4 rounded-lg border-2 border-surface-container hover:bg-surface-container-low transition-colors text-right font-bold text-on-surface flex items-center justify-between group">
+<span>ג. משה רבנו</span>
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary"></span>
+</button>
+<button class="p-4 rounded-lg border-2 border-surface-container hover:bg-surface-container-low transition-colors text-right font-bold text-on-surface flex items-center justify-between group">
+<span>ד. אברהם אבינו</span>
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant group-hover:border-primary"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex flex-row-reverse justify-around items-center px-4 pb-6 pt-4 bg-[#fdf7df] dark:bg-[#312f1f] bg-opacity-80 backdrop-blur-md z-50 rounded-t-[3rem] shadow-[0_-4px_24px_rgba(49,47,31,0.06)]">
+<a href="/" class="flex flex-col items-center justify-center text-[#005f9c] px-6 py-2 hover:bg-[#efe9cd] dark:hover:bg-[#312f1f] rounded-[2rem] transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">Previous</span>
+</a>
+<a href="/" class="flex flex-col items-center justify-center bg-[#fdbc13] text-[#775600] rounded-[2rem] px-8 py-3 shadow-[0_4px_0_#775600] active:translate-y-1 transition-all duration-100 cursor-pointer">
+<span class="material-symbols-outlined filled-icon" data-icon="auto_stories">auto_stories</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">Progress</span>
+</a>
+<a href="/chapters/2" class="flex flex-col items-center justify-center text-[#005f9c] px-6 py-2 hover:bg-[#efe9cd] dark:hover:bg-[#312f1f] rounded-[2rem] transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-plus-jakarta-sans font-bold text-sm">Next</span>
+</a>
+</nav>
+</body></html>

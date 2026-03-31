@@ -2,7 +2,42 @@
 ---
 ## Project Overview
 
-exodus is a hebrew website for storybook of exodus 
+**Exodus Adventure** is an interactive Hebrew-language (RTL) children's storybook web app that retells the biblical Book of Exodus across 5 sequential chapters:
+
+1. **יעקב מגיע למצרים** — Jacob arrives in Egypt and reunites with Joseph
+2. **בני ישראל במצרים: השעבוד** — Life under slavery in Egypt
+3. **משה והסנה הבוער** — Moses and the burning bush
+4. **עשר המכות** — The ten plagues
+5. **קריעת ים סוף** — Crossing the Red Sea
+
+### Target Audience
+Children ages 5–12.
+
+### Tech Stack
+- **Static HTML pages** — each chapter is a standalone `code.html` file in `exodus_src/`
+- **Tailwind CSS** (CDN) with a custom Material Design 3–inspired color theme ("Nile-to-Desert" warm palette)
+- **Google Fonts** — Plus Jakarta Sans (headlines), Be Vietnam Pro (body)
+- **Google Material Symbols** for iconography
+
+### Design System ("The Wandering Storyteller")
+Defined in `exodus_src/eden_adventure/DESIGN.md`. Key principles:
+- **"Digital Pop-Up Book"** aesthetic — organic asymmetry, overlapping elements, tonal layering instead of borders
+- **Warm palette** — Ancient Gold primary (#775600), Sky & Water secondary (#005f9c), Nile Green tertiary (#006b1b), cream background (#fdf7df)
+- **Tactile components** — 3D "pressable stone" buttons with bottom-offset shadows, papyrus-style cards, no hard borders
+- **No pure black** — all dark text uses `#312f1f`
+
+### Page Structure (per chapter)
+Each chapter page includes:
+- **Top app bar** — sticky header with "Exodus Adventure" title, map icon, back navigation
+- **Hero section** — illustration + chapter title + narrative intro
+- **Video placeholder** — play button over a cinematic thumbnail
+- **Trivia/quiz section** — multiple-choice questions about the chapter's story
+- **Progress indicator** — shows current chapter (1–5)
+- **Bottom nav bar** — Previous / Progress / Next navigation with glassmorphism effect
+
+### Additional Materials
+- Each chapter directory contains a `screen.png` screenshot alongside its `code.html`
+- `eden_adventure/` holds the design system documentation
 
 ---
 ## Workflow: Skill-First, Subagent-Driven (ENFORCED)
